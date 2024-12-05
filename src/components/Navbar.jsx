@@ -33,6 +33,12 @@ const Navbar = () => {
             Our Story
           </a>
           <a
+            href="#behind-the-logo"
+            className="text-gray-300 hover:text-neonBlue transition font-medium"
+          >
+            Behind The Logo
+          </a>
+          <a
             href="#products"
             className="text-gray-300 hover:text-neonBlue transition font-medium"
           >
@@ -41,7 +47,7 @@ const Navbar = () => {
         </nav>
 
         {/* Right Logo Section */}
-        <div className="flex flex-col items-center">
+        <div className="cursor-default flex flex-col items-center">
           <h1 className="text-lg font-orbitron text-neonBlue">REMOTRON</h1>
           <p className="text-gray-400 text-xs italic">
             &quot;The Remote That Controls The Future&quot;
@@ -104,11 +110,18 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#about"
+                href="#our-story"
                 className="text-gray-300 hover:text-neonBlue transition font-medium text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About Us
+                Our Story
+              </a>
+              <a
+                href="#behind-the-logo"
+                className="text-gray-300 hover:text-neonBlue transition font-medium text-lg"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Behind The Logo
               </a>
               <a
                 href="#products"

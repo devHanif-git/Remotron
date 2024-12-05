@@ -13,7 +13,7 @@ const OurStory = () => {
   return (
     <div
       id="our-story"
-      className="min-h-screen bg-gray-900 text-white px-12 py-10"
+      className="min-h-screen bg-gray-900 text-white px-12 py-6"
     >
       <h1 className="text-4xl font-orbitron text-neonBlue mb-8 text-center">
         Our Story
@@ -28,7 +28,7 @@ const OurStory = () => {
           interface represents connectivity and ease of use. Together, they
           embody our tagline:{" "}
           <span className="text-neonBlue font-bold">
-          &quot;The Remote That Controls the Future.&quot;
+            &quot;The Remote That Controls the Future.&quot;
           </span>
         </p>
       </div>
