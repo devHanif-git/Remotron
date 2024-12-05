@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex flex-col items-center">
           <h1 className="text-lg font-orbitron text-neonBlue">REMOTRON</h1>
           <p className="text-gray-400 text-xs italic">
-            "The Remote That Controls The Future"
+            &quot;The Remote That Controls The Future&quot;
           </p>
         </div>
       </div>
