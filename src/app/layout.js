@@ -20,12 +20,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <body className="bg-darkBackground text-white font-poppins">
-      <Navbar />
-      <main>{children}</main>
-      <footer className="py-4 text-center text-gray-500">
-        &copy; {new Date().getFullYear()} Remotron. All Rights Reserved.
-      </footer>
-    </body>
+    <html lang="en">
+      <body className="bg-darkBackground text-white font-poppins">
+        <Navbar />
+        <main>{children}</main>
+        <footer className="py-4 text-center text-gray-500">
+          &copy; {new Date().getFullYear()} Remotron. All Rights Reserved.
+        </footer>
+      </body>
+    </html>
   );
 }
