@@ -79,25 +79,27 @@ const Hero = () => {
         </form>
       </section>
 
-      {/* Modal Popup */}
+      {/* Success Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          onClick={() => setIsModalOpen(false)} // Close on clicking the overlay
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+          onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-white rounded-lg p-8 text-center shadow-xl"
-            onClick={(e) => e.stopPropagation()} // Prevent closing on modal click
+            className="bg-white p-6 rounded-lg shadow-lg text-center"
+            onClick={(e) => e.stopPropagation()} // Prevent closing the modal when clicking inside
           >
-            <h3 className="text-2xl text-black mb-4">Thank You!</h3>
-            <p className="text-gray-700 mb-6">
+            <h2 className="text-2xl font-orbitron text-neonBlue mb-4">
+              Thank You!
+            </h2>
+            <p className="text-gray-800 mb-4">
               You have successfully signed up!
             </p>
             <button
               onClick={() => setIsModalOpen(false)} // Close modal on click
-              className="bg-neonBlue text-black py-2 px-6 rounded-lg font-semibold hover:bg-neonBlue hover:text-white hover:border hover:border-white transition-all duration-300"
+              className="bg-neonBlue text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition duration-300"
             >
-              Ok
+              Close
             </button>
           </div>
         </div>

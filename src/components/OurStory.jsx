@@ -123,27 +123,24 @@ const OurStory = () => {
         </ul>
       </div>
 
-      {/* Image Modal */}
+      {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50"
-          onClick={() => setIsModalOpen(false)} // Close modal on background click
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setIsModalOpen(false)}
         >
-          <div
-            className="bg-gray-800 p-4 rounded-lg shadow-lg w-80 h-80 flex justify-center items-center relative"
-            onClick={(e) => e.stopPropagation()} // Prevent modal click from closing
-          >
-            <img
-              src={modalImage}
-              alt="Logo Preview"
-              className="max-w-full max-h-full object-contain"
-            />
+          <div className="relative max-w-lg w-full p-4">
             <button
               className="absolute top-2 right-2 bg-red-500 text-white py-1 px-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
               onClick={() => setIsModalOpen(false)}
             >
               Close
             </button>
+            <img
+              src={modalImage}
+              alt="Product Preview"
+              className="rounded-lg w-full"
+            />
           </div>
         </div>
       )}

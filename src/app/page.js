@@ -1,6 +1,8 @@
 import OurStory from "@/components/OurStory";
 import Hero from "@/components/Hero";
 import BehindTheLogo from "@/components/BehindTheLogo";
+import Products from "@/components/Products";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <OurStory />
       <BehindTheLogo />
+      <Products />
+      <ContactUs />
     </main>
   );
 }

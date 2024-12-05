@@ -44,6 +44,12 @@ const Navbar = () => {
           >
             Products
           </a>
+          <a
+            href="#contact-us"
+            className="text-gray-300 hover:text-neonBlue transition font-medium"
+          >
+            Contact Us
+          </a>
         </nav>
 
         {/* Right Logo Section */}
@@ -129,6 +135,13 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Products
+              </a>
+              <a
+                href="#contact-us"
+                className="text-gray-300 hover:text-neonBlue transition font-medium text-lg"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
               </a>
             </nav>
           </div>
