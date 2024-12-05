@@ -78,10 +78,10 @@ const BehindTheLogo = () => {
           </h2>
           <p className="text-gray-300 leading-relaxed">
             Using tools like Adobe Illustrator and Figma, we crafted the logo
-            with precision. The robot's design conveys intelligence, while the
-            remote-like interface ensures familiarity. Neon Blue was chosen to
-            symbolize technology and futurism, complemented by clean and modern
-            typography.
+            with precision. The robot&apos;s design conveys intelligence, while
+            the remote-like interface ensures familiarity. Neon Blue was chosen
+            to symbolize technology and futurism, complemented by clean and
+            modern typography.
           </p>
         </div>
       </div>
