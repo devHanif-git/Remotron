@@ -7,3 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+#our-story {
+  scroll-margin-top: 70px; /* Adjust offset to match your navbar height */
+}

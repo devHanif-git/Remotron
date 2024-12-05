@@ -23,7 +23,7 @@ const Hero = () => {
             here.
           </p>
           <div className="space-y-4 sm:space-x-4 sm:space-y-0 flex flex-col sm:flex-row justify-center sm:justify-start mt-8 sm:mt-0">
-            <a href="#about">
+            <a href="#our-story">
               <button className="bg-neonBlue text-black py-2 px-4 rounded-lg text-xl font-semibold hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                 Learn More
               </button>

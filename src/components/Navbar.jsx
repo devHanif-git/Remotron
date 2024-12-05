@@ -27,10 +27,10 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="#about"
+            href="#our-story"
             className="text-gray-300 hover:text-neonBlue transition font-medium"
           >
-            About Us
+            Our Story
           </a>
           <a
             href="#products"
