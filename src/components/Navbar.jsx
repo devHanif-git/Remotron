@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-black py-3 border-b border-gray-800 sticky top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between px-6 md:px-40">
+      <div className="container mx-auto flex items-center justify-between px-6">
         {/* Left Logo Section */}
         <div className="flex items-center cursor-pointer">
           <a href="#">
