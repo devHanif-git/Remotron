@@ -7,9 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "15px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        neonBlue: "#00BFFF",
+        darkBackground: "#0D0D0D",
+        lightGray: "#E5E5E5",
+      },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
