@@ -28,7 +28,7 @@ const OurStory = () => {
           interface represents connectivity and ease of use. Together, they
           embody our tagline:{" "}
           <span className="text-neonBlue font-bold">
-            "The Remote That Controls the Future."
+          &quot;The Remote That Controls the Future.&quot;
           </span>
         </p>
       </div>
