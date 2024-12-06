@@ -1,6 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const BehindTheLogo = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
+  const openModal = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
   return (
     <div
       id="behind-the-logo"
@@ -17,7 +26,8 @@ const BehindTheLogo = () => {
           <img
             src="/section1.png" // Replace with your actual image path
             alt="Remote to Remotron Concept"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg shadow-lg w-full transition-transform transform hover:scale-105 cursor-pointer"
+            onClick={() => openModal("/section1.png")}
           />
         </div>
         {/* Text */}
@@ -56,7 +66,8 @@ const BehindTheLogo = () => {
           <img
             src="/section2.png" // Replace with your actual image path
             alt="Concept Design"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg shadow-lg w-full transition-transform transform hover:scale-105 cursor-pointer"
+            onClick={() => openModal("/section2.png")}
           />
         </div>
       </div>
@@ -68,7 +79,8 @@ const BehindTheLogo = () => {
           <img
             src="/section3.png" // Replace with your actual image path
             alt="Design Process"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg shadow-lg w-full transition-transform transform hover:scale-105 cursor-pointer"
+            onClick={() => openModal("/section3.png")}
           />
         </div>
         {/* Text */}
@@ -77,11 +89,11 @@ const BehindTheLogo = () => {
             The Design Process
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Using tools like Adobe Illustrator and Figma, we crafted the logo
-            with precision. The robot&apos;s design conveys intelligence, while
-            the remote-like interface ensures familiarity. Neon Blue was chosen
-            to symbolize technology and futurism, complemented by clean and
-            modern typography.
+            Using tools like Adobe Illustrator, we crafted the logo with
+            precision. The robot&apos;s design conveys intelligence, while the
+            remote-like interface ensures familiarity. Neon Blue was chosen to
+            symbolize technology and futurism, complemented by clean and modern
+            typography.
           </p>
         </div>
       </div>
@@ -105,7 +117,8 @@ const BehindTheLogo = () => {
           <img
             src="/section4.png" // Replace with your actual image path
             alt="References and Inspiration"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg shadow-lg w-full transition-transform transform hover:scale-105 cursor-pointer"
+            onClick={() => openModal("/section4.png")}
           />
         </div>
       </div>
@@ -123,6 +136,28 @@ const BehindTheLogo = () => {
           vision.
         </p>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div className="relative max-w-[1300px]  p-4">
+            <button
+              className="absolute top-2 right-2 bg-red-500 text-white py-1 px-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300"
+              onClick={() => setIsModalOpen(false)}
+            >
+              Close
+            </button>
+            <img
+              src={modalImage}
+              alt="Behind The Logo Preview"
+              className="rounded-lg w-full"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

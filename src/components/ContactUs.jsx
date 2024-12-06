@@ -40,7 +40,7 @@ const ContactUs = () => {
         {/* Logo or Image */}
         <div className="flex justify-center">
           <img
-            src="/remotron-robot.png" // Replace with your actual logo path
+            src="/favicon.png" // Replace with your actual logo path
             alt="Remotron Logo"
             className="w-64 h-64 object-contain rounded-full shadow-lg"
           />

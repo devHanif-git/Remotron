@@ -11,9 +11,9 @@ const Navbar = () => {
         <div className="flex items-center cursor-pointer">
           <a href="#">
             <img
-              src="./remotron-robot.png"
+              src="./favicon.png"
               alt="Remotron Logo"
-              className="h-[45px]"
+              className="h-[55px] transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             />
           </a>
         </div>
