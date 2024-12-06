@@ -89,7 +89,7 @@ const Products = () => {
           {/* 16:9 aspect ratio */}
           <iframe
             className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/kG0zW7A7PRo" // Replace with your actual YouTube video ID
+            src="https://www.youtube.com/embed/-ko1Zt4kCQo" // Replace with your actual YouTube video ID
             title="Remotron Promotional Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
